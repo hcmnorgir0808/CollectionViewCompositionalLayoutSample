@@ -22,11 +22,21 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-hX-QbA">
+                        <rect key="frame" x="0.0" y="101" width="109" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0HT-ob-kN4"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" red="1" green="0.61568627450000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="MtS-hX-QbA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Ic-ab-nR1"/>
+                <constraint firstAttribute="bottom" secondItem="MtS-hX-QbA" secondAttribute="bottom" id="WLa-ZO-Fod"/>
                 <constraint firstItem="Yem-Bh-Zdw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cH7-1F-nCz"/>
+                <constraint firstAttribute="trailing" secondItem="MtS-hX-QbA" secondAttribute="trailing" id="hob-OV-zAC"/>
                 <constraint firstItem="Yem-Bh-Zdw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="x5K-LC-eg2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
