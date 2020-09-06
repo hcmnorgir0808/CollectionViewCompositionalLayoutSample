@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6C3DE7D2504DA8100483E89 /* GroupPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C3DE7C2504DA8100483E89 /* GroupPagingViewController.swift */; };
 		C6C4427124FFE9520056D88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C4427024FFE9520056D88A /* AppDelegate.swift */; };
 		C6C4427324FFE9520056D88A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C4427224FFE9520056D88A /* SceneDelegate.swift */; };
 		C6C4427524FFE9520056D88A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C4427424FFE9520056D88A /* ListViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6C3DE7C2504DA8100483E89 /* GroupPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPagingViewController.swift; sourceTree = "<group>"; };
 		C6C4426D24FFE9520056D88A /* CollectionViewCompositionalLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCompositionalLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C4427024FFE9520056D88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C4427224FFE9520056D88A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				C6CA148125012D3600EDD5C5 /* ViewController.swift */,
 				C6C4427424FFE9520056D88A /* ListViewController.swift */,
 				C6CA14832501309900EDD5C5 /* GridViewController.swift */,
+				C6C3DE7C2504DA8100483E89 /* GroupPagingViewController.swift */,
 				C6CA14852501347000EDD5C5 /* TwoColumnViewController.swift */,
 				C6C442A024FFECC30056D88A /* LabelCell.swift */,
 				C6C442A124FFECC30056D88A /* LabelCell.xib */,
@@ -279,6 +282,7 @@
 				C6C4427524FFE9520056D88A /* ListViewController.swift in Sources */,
 				C6C4427124FFE9520056D88A /* AppDelegate.swift in Sources */,
 				C6CA14842501309900EDD5C5 /* GridViewController.swift in Sources */,
+				C6C3DE7D2504DA8100483E89 /* GroupPagingViewController.swift in Sources */,
 				C6C442A224FFECC30056D88A /* LabelCell.swift in Sources */,
 				C6CA14862501347000EDD5C5 /* TwoColumnViewController.swift in Sources */,
 				C6C4427324FFE9520056D88A /* SceneDelegate.swift in Sources */,

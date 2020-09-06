@@ -23,12 +23,14 @@ class ViewController: UIViewController {
         case list
         case grid
         case twoColumn
+        case groupPaging
         
         var title: String {
             switch self {
-            case .list:      return "List"
-            case .grid:      return "Grid"
-            case .twoColumn: return "TwoColumn"
+            case .list:        return "List"
+            case .grid:        return "Grid"
+            case .twoColumn:   return "TwoColumn"
+            case .groupPaging: return "GroupPaging"
             }
         }
     }
@@ -50,18 +52,19 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = List.init(rawValue: indexPath.row)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch cell {
         case .list:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "ListViewController")
             navigationController?.pushViewController(vc, animated: true)
         case .grid:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "GridViewController")
             navigationController?.pushViewController(vc, animated: true)
         case .twoColumn:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "TwoColumnViewController")
+            navigationController?.pushViewController(vc, animated: true)
+        case .groupPaging:
+            let vc = storyboard.instantiateViewController(identifier: "GroupPagingViewController")
             navigationController?.pushViewController(vc, animated: true)
         case .none:
             return

@@ -193,5 +193,51 @@
             </objects>
             <point key="canvasLocation" x="729" y="380"/>
         </scene>
+        <!--Group Paging View Controller-->
+        <scene sceneID="6bg-0S-XNv">
+            <objects>
+                <viewController storyboardIdentifier="GroupPagingViewController" id="o4j-43-a6z" customClass="GroupPagingViewController" customModule="CollectionViewCompositionalLayoutSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cI-QF-RPn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p5J-rQ-KeY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wmk-BD-IfB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VUM-ZR-A5y">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8fS-wI-euY">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yms-JE-GMF" firstAttribute="trailing" secondItem="p5J-rQ-KeY" secondAttribute="trailing" id="4l6-hv-IZ9"/>
+                            <constraint firstItem="p5J-rQ-KeY" firstAttribute="leading" secondItem="yms-JE-GMF" secondAttribute="leading" id="SxV-TD-nrd"/>
+                            <constraint firstItem="p5J-rQ-KeY" firstAttribute="top" secondItem="yms-JE-GMF" secondAttribute="top" id="Yy0-k5-gPQ"/>
+                            <constraint firstItem="yms-JE-GMF" firstAttribute="bottom" secondItem="p5J-rQ-KeY" secondAttribute="bottom" id="v7S-h3-eB7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yms-JE-GMF"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="p5J-rQ-KeY" id="Uba-GX-uuh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0g-5G-1BH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="380"/>
+        </scene>
     </scenes>
 </document>
